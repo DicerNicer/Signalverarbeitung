@@ -66,6 +66,8 @@ plt.show(block = True)                                  #Anzeigen des Bildes
 
 
 #? Sytaxerklärung [Startbereich zeile : Endbereich zeile : Wahl jede zweite Zeile, Startbereich spalte : Endbereich spalte]
+#!Temp Test
+testkreis = kreishd[600:]
 
 startseq = bildhd[121:150:2,18:155].mean(axis=0)
 startseq1 = bildhd[120:149:2,18:155].mean(axis=0)
@@ -79,6 +81,7 @@ startseq2 = bildhd[120:150,18:155].mean(axis=0)
 corr_sig = signal.correlate(kreishd, startseq)
 corr_sig1 = signal.correlate(kreishd, startseq1)
 corr_sig2 = signal.correlate(kreishd, startseq2)
+corr_test = signal.correlate(testkreis, startseq)
 
 # plt.plot(corr_sig[:5000],label = 'corr_sig')
 # plt.plot(corr_sig1[:5000],label = 'corr_sig1')
@@ -105,6 +108,8 @@ zeilenstart1 = signal.find_peaks(corr_sig1, 6e8,distance = 200)
 zeilenstart1 = zeilenstart[0]
 zeilenstart2 = signal.find_peaks(corr_sig2, 6e8,distance = 200)
 zeilenstart2 = zeilenstart[0]
+zeilenstarttest = signal.find_peaks(corr_test,0.6e9,distance = 200)
+zeilenstarttest = zeilenstarttest[0]
 print(len(zeilenstart))
 print(zeilenstart.dtype)
 print(zeilenstart2)
@@ -124,13 +129,13 @@ for x in zeilenstart[0]:
 print(startpointssortiert) 
 """
 
-kreisstraight = kreishd
+kreisstraight = testkreis
 testmest = []
 y = 0
 for zeilenstart in zeilenstart:
     testmest.append(signal.resample(kreisstraight[y:zeilenstart],1000))
     y= zeilenstart
 
-plt.imshow(testmest,aspect = 'auto')
+plt.imshow(testmest,aspect = 'auto',cmap='gray')
 plt.show(block = True) 
 
