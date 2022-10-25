@@ -138,4 +138,6 @@ for zeilenstart in zeilenstart:
 
 plt.imshow(testmest,aspect = 'auto',cmap='gray')
 plt.show(block = True) 
+ 
+
 
