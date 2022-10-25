@@ -22,9 +22,9 @@ channel2 = data[:, 1]
 
 zeilenlaenge = 734 #Gefundener wert durch suchen
 
-spalten =512       #Gefundener wert durch suchen
+spalten = 512       #Gefundener wert durch suchen
 
-start= 1392322     #Startpunkt in .wav gesucht
+start = 1392322     #Startpunkt in .wav gesucht
 
 
 # zuweisen der Variable kreis. Dabei zuscheiden des Arrays auf den Wertebereich [start des bildes : start des bildes+ eine bild länge]
