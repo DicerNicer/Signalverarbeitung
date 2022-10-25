@@ -1,23 +1,23 @@
 
 
-# Voyager Golden Records
-## Einlesen der WAV-Datei
+#? Voyager Golden Records
+#? Einlesen der WAV-Datei
 
 
 
 
-# Laden der Benötigten Bibliotheken
+#? Laden der Benötigten Bibliotheken
 import scipy.io.wavfile as wavfile
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.signal as signal
 
-#Hier wird die Datei eingelesen und in Zwei unterschiedliche Arrays gespeicher
+#?Hier wird die Datei eingelesen und in Zwei unterschiedliche Arrays gespeicher
 rate, data = wavfile.read('Voyager Golden Record Encoded Image Data 44_1 kHz.wav')
 
-#Zerlegen des Array data in die beiden Tonspuren hier channel1
+#?Zerlegen des Array data in die beiden Tonspuren hier channel1
 channel1 = data[:, 0]
-#Zerlegen des Array data in die beiden Tonspuren hier channel2
+#?Zerlegen des Array data in die beiden Tonspuren hier channel2
 channel2 = data[:, 1]
 
 zeilenlaenge = 734 #Gefundener wert durch suchen
@@ -27,7 +27,7 @@ spalten = 512       #Gefundener wert durch suchen
 start = 1392322     #Startpunkt in .wav gesucht
 
 
-# zuweisen der Variable kreis. Dabei zuscheiden des Arrays auf den Wertebereich [start des bildes : start des bildes+ eine bild länge]
+#? zuweisen der Variable kreis. Dabei zuscheiden des Arrays auf den Wertebereich [start des bildes : start des bildes+ eine bild länge]
 
 kreis = channel1[start:start+zeilenlaenge*spalten]
 
@@ -45,13 +45,14 @@ kreishd = channel1[start+offset:start+zeilenlaenge*spalten+215+offset] #Zuweisen
 
 x = signal.resample(kreishd,(zeilenlaenge*spalten)) #Hier werden mehr datenpunkte eingefügt durch erstellen von zwischenwerten
 bildhd = x.reshape(spalten,zeilenlaenge) #aus 1D array wird 2D array
+""" 
 plt.imshow(bildhd, cmap = "gray")
 plt.plot(0, 0,label='mit Korrektur')
 plt.legend()
 plt.show(block = True)                                  #Anzeigen des Bildes
+"""
 
-
-# Zoomen auf den Streifen links im bild
+#? Zoomen auf den Streifen links im bild
 
 
 # plt.imshow(bildhd[121:150:2,5:145], cmap = 'gray')
@@ -64,11 +65,11 @@ plt.show(block = True)                                  #Anzeigen des Bildes
 # plt.show(block = True) 
 
 
-# Sytaxerklärung [Startbereich zeile : Endbereich zeile : Wahl jede zweite Zeile, Startbereich spalte : Endbereich spalte]
+#? Sytaxerklärung [Startbereich zeile : Endbereich zeile : Wahl jede zweite Zeile, Startbereich spalte : Endbereich spalte]
 
 startseq = bildhd[121:150:2,18:155].mean(axis=0)
 startseq1 = bildhd[120:149:2,18:155].mean(axis=0)
-startseq2 = bildhd[121:150:2,5:145].mean(axis=0)
+startseq2 = bildhd[120:150,18:155].mean(axis=0)
 # plt.plot(startseq2,label = 'startseq2')
 # plt.plot(startseq1,label = 'startseq1')
 # plt.plot(startseq,label = 'startseq')
@@ -83,7 +84,7 @@ corr_sig2 = signal.correlate(kreishd, startseq2)
 # plt.plot(corr_sig1[:5000],label = 'corr_sig1')
 # plt.plot(corr_sig2[:5000],label = 'corr_sig2')
 # plt.legend()
-# plt.show
+# plt.show()
 
 # fig, (ax1,ax2,ax3) = plt.subplots(nrows=3,ncols=1)
 # fig.suptitle('Cross Correlatet Signal')
@@ -98,38 +99,38 @@ corr_sig2 = signal.correlate(kreishd, startseq2)
 # plt.show(block = True) 
 # Die zeilenanfänge sind nun immer die Peaks.
 
-zeilenstart = signal.find_peaks(corr_sig, 0.7e9,500)
+zeilenstart = signal.find_peaks(corr_sig, 0.6e9,distance = 200)
 zeilenstart = zeilenstart[0]
-zeilenstart1 = signal.find_peaks(corr_sig1, 0.86e9,500)
+zeilenstart1 = signal.find_peaks(corr_sig1, 6e8,distance = 200)
 zeilenstart1 = zeilenstart[0]
-zeilenstart2 = signal.find_peaks(corr_sig2, 0.7e9,500)
+zeilenstart2 = signal.find_peaks(corr_sig2, 6e8,distance = 200)
+zeilenstart2 = zeilenstart[0]
+print(len(zeilenstart))
+print(zeilenstart.dtype)
 print(zeilenstart2)
-# zeilenstart2 = zeilenstart[0]
 
-# plt.plot(zeilenstart)
-# plt.plot(zeilenstart1)
-# plt.plot(zeilenstart2)
-# plt.show(block = True) 
-# y=0
-# startpointssortiert = []
-# for x in zeilenstart[0]:
-#     temp = x-y
-#     if(temp>500):
-#         startpointssortiert.append(x)
-#     y = x
-# print(startpointssortiert)
+#plt.plot(zeilenstart)
+#plt.plot(zeilenstart1)
+#plt.plot(zeilenstart2)
+#plt.show(block = True) 
+""" 
+y=0
+startpointssortiert = []
+for x in zeilenstart[0]:
+    temp = x-y
+    if(temp>500):
+        startpointssortiert.append(x)
+    y = x
+print(startpointssortiert) 
+"""
 
-# kreisstraight = kreishd
-# testmest = []
-# y = 0
-# for zeilenstart in startpointssortiert:
-#     testmest.append(signal.resample(kreisstraight[y:zeilenstart],734))
-#     y= y+734
+kreisstraight = kreishd
+testmest = []
+y = 0
+for zeilenstart in zeilenstart:
+    testmest.append(signal.resample(kreisstraight[y:zeilenstart],1000))
+    y= zeilenstart
 
-
-# # In[45]:
-
-
-# plt.imshow(testmest)
-# plt.show(block = True) 
+plt.imshow(testmest,aspect = 'auto')
+plt.show(block = True) 
 
