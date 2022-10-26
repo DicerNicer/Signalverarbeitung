@@ -104,9 +104,9 @@ Zuerst wird ein Stück mit der Länge 500*1000 herausgeslicet und dann in ein 2D
 
 #### Zeitkontinuierlich
 
-§§
+$$
 x(t)
-§§
+$$
 
 #### Zeitdiskret
 
