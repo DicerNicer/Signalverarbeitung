@@ -138,19 +138,19 @@ $x(t) = |x(t)| · ej∠(x(t))$
 #### gerade
 
 $x(t) = x(−t)$
-![Hier sollte ein Bild sein](Bilder/gerade.png)
+<p align="left">
+  <img src="Bilder/gerade.png" />
+</p>
 
 #### ungerade
 
 $x(t) = −x(−t)$
 ![Hier sollte ein Bild sein](Bilder/ungerade.png)
-
+<p align="left">
+  <img src="Bilder/ungerade.png" />
+</p>
 #### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen!
 
 $x(t) = xg(t) + xu(t)$
 $x_g(t) = \frac{1}{2}(x(t) + x(−t))$
 $x_u(t) = \frac{1}{2}(x(t) − x(−t))$
-<p align="center">
-  <img src="Bilder/gerade.png" />
-  <img src="Bilder/ungerade.png" />
-</p>
