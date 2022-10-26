@@ -138,12 +138,12 @@ $x(t) = |x(t)| · ej∠(x(t))$
 #### gerade
 
 $x(t) = x(−t)$
-[test](Signalverarbeitung/gerade.png)
+![Hier sollte ein Bild sein](gerade.png)
 
 #### ungerade
 
 $x(t) = −x(−t)$
-[](ungerade.png)
+![Hier sollte ein Bild sein](ungerade.png)
 
 #### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen!
 
