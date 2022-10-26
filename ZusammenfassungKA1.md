@@ -215,3 +215,28 @@ $$x[k] = \sum_{k_0=-\infty}^{\infty} x[k_0] \cdot \delta [k-k_0] $$
   <img src="Bilder/si.png" />
 </p>
 Darstellung der normierten (blau) und nicht normierten (rot) sinc-Funktion
+
+### Faltung von zwei Rechteckfunktionen
+
+
+<p align="left">
+  <img src="Bilder/faltung.png" />
+</p>
+Das Bild stellt die Funktionen für unterschiedliche Zeitpunkte t dar. Das Integral der Faltungsfunktion berechnet sich aus der Fläche, die unter dem Produkt der beiden Funktionen u(t) und g(t - τ) liegt. Für t = 0 überschneiden sich die Funktionsbereiche, die ungleich null sind, nicht. Das Produkt der beiden Funktionen ist für t = 0 null. Für negative Werte von t ist das ebenfalls der Fall, wie an dem Beispiel für t = - 1 deutlich wird. Für positive Werte von t überschneiden sich die Funktionsbereiche, in den die Funktionen ungleich null sind. Das gilt für den Bereich 0 ≤ t < 6. Für den Bereich 2 ≤ t < 4 überdecken sich die Funktionen komplett, hier ergibt sich ein konstanter Wert des Faltungsintegrals von 4, da die Fläche in diesem Bereich konstant bleibt. Für t > 6 liegt wieder keine Überschneidung vor, das Produkt der Funktionen ist für alle τ null.
+
+Die Überlappung der beiden Rechtecke steigt also von t = 0 bis t = 2 linear an und hat für t = 2 den maximalen Wert von 4. Dieser Werte bleibt bis t = 4 konstant. Danach reduziert sich die Überlappung wieder linear, und es ergibt sich ein Wert von 0 für t = 6. Damit kann das Faltungsintegral als Funktion der Zeit t skizziert werden.
+<p align="left">
+  <img src="Bilder/falt1.png" />
+</p>
+
+### Kreuzkorrelation
+
+Bei der Kreuzkorrelation handelt es sich auch um eine Faltung jedoch gibt der Faltungsintegral die Korrelation("gleichheit") an. Bei der Voyager Decodierung wird die Startsequenz, die zu beginn jeder Zeile kommt, und das ganze Bild Kreuzkorreliert.
+<p align="left">
+  <img src="Bilder/corr.png" />
+</p>
+In dem Ergebnisarray suchen wir nun die Peaks heraus ihre Zeitpunkte sind der Beginn einer Zeile. Zuletzt werden die Daten Zwischen den Startpunkten mit resample auf gleiche länge gebracht und dass bild angezeigt.
+<p align="left">
+  <img src="Bilder/kreis.png" />
+</p>
+

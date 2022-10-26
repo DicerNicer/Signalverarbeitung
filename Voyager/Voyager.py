@@ -83,11 +83,11 @@ corr_sig1 = signal.correlate(kreishd, startseq1)
 corr_sig2 = signal.correlate(kreishd, startseq2)
 corr_test = signal.correlate(testkreis, startseq)
 
-# plt.plot(corr_sig[:5000],label = 'corr_sig')
+plt.plot(corr_sig[:5000],label = 'corr_sig')
 # plt.plot(corr_sig1[:5000],label = 'corr_sig1')
 # plt.plot(corr_sig2[:5000],label = 'corr_sig2')
 # plt.legend()
-# plt.show()
+plt.show()
 
 # fig, (ax1,ax2,ax3) = plt.subplots(nrows=3,ncols=1)
 # fig.suptitle('Cross Correlatet Signal')
