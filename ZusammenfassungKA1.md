@@ -1,4 +1,4 @@
-<centered>
+<p align=center>
 
 # Zusammenfassung
 
@@ -174,4 +174,4 @@ $$
 x_u(t) = \frac{1}{2}(x(t) − x(−t))
 $$
 
-</centered>
+</p>
