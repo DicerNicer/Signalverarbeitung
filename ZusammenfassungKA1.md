@@ -169,6 +169,9 @@ Mit der Periodendauer Tp und ganzzahligem Vielfachem n
 #### zeitdiskreter Dirac-Impuls
 
 $\delta[\text{k}] = \{1 \text{ für  k}  = 0; 0 \text{ für  k} \neq 0\}$
+<p align="left">
+  <img src="Bilder/dirac.png" />
+</p>
 
 ##### Ausblendeigenschaft
 
@@ -180,4 +183,28 @@ $x[k]\cdot \delta[k-k_0] = x[k_0]\cdot \delta[k-k_0]$
 
 Aus einer Summe von Dirac-Stößen lässt sich jedes beliebige zeitdiskrete Signal "bauen".
 
-$x[k] = \sum_{k_0=-\infty}^{\infty} 2^{-n} = 1 $
+$$x[k] = \sum_{k_0=-\infty}^{\infty} x[k_0] \cdot \delta [k-k_0] $$
+
+#### Signum-Funktion
+
+<p align="left">
+  <img src="Bilder/signum.png" />
+</p>
+
+#### Rechteckfunktion
+
+<p align="left">
+  <img src="Bilder/rechteck.png" />
+</p>
+
+#### Dreieckfunktion
+
+<p align="left">
+  <img src="Bilder/dreieck.png" />
+</p>
+
+#### exponential Funktion
+
+<p align="left">
+  <img src="Bilder/expo.png" />
+</p>
