@@ -150,8 +150,34 @@ $x(t) = −x(−t)$
   <img src="Bilder/ungerade.png" />
 </p>
 
-#### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen
+##### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen
 
 $x(t) = xg(t) + xu(t)$ <br>
 $x_g(t) = \frac{1}{2}(x(t) + x(−t))$ <br>
 $x_u(t) = \frac{1}{2}(x(t) − x(−t))$
+
+#### periodische Signale
+
+$x(t) = x(t + nT_p)$
+Mit der Periodendauer Tp und ganzzahligem Vielfachem n
+<p align="left">
+  <img src="Bilder/periode.png" />
+</p>
+
+### Ausgewählte Signale
+
+#### zeitdiskreter Dirac-Impuls
+
+$\delta[\text{k}] = \{1 \text{ für  k}  = 0; 0 \text{ für  k} \neq 0\}$
+
+##### Ausblendeigenschaft
+
+Bei Multiplikation des (zeitverschobenen) Dirac mit einem
+anderen Zeitsignal werden alle Werte des Zeitsignals bis auf den an der Stelle des
+Dirac-Pulses ausgeblendet.
+
+$x[k]\cdot \delta[k-k_0] = x[k_0]\cdot \delta[k-k_0]$
+
+Aus einer Summe von Dirac-Stößen lässt sich jedes beliebige zeitdiskrete Signal "bauen".
+
+$x[k] = \sum_{k_0=-\infty}^{\infty} 2^{-n} = 1 $
