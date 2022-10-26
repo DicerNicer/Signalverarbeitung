@@ -143,7 +143,7 @@ $x(t) = x(−t)$
 #### ungerade
 
 $x(t) = −x(−t)$
-![Hier sollte ein Bild sein](https://github.com/DicerNicer/Signalverarbeitung/blob/main/Bilder/ungerade.png)
+[Hier sollte ein Bild sein](https://github.com/DicerNicer/Signalverarbeitung/blob/main/Bilder/ungerade.png)
 
 #### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen!
 
