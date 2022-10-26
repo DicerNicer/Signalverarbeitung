@@ -152,6 +152,6 @@ $x(t) = −x(−t)$
 
 #### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen
 
-$x(t) = xg(t) + xu(t)$
-$x_g(t) = \frac{1}{2}(x(t) + x(−t))$
+$x(t) = xg(t) + xu(t)$ <br>
+$x_g(t) = \frac{1}{2}(x(t) + x(−t))$ <br>
 $x_u(t) = \frac{1}{2}(x(t) − x(−t))$
