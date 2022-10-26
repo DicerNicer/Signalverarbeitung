@@ -208,3 +208,10 @@ $$x[k] = \sum_{k_0=-\infty}^{\infty} x[k_0] \cdot \delta [k-k_0] $$
 <p align="left">
   <img src="Bilder/expo.png" />
 </p>
+
+#### Si-Funktion
+
+<p align="left">
+  <img src="Bilder/si.png" />
+</p>
+Darstellung der normierten (blau) und nicht normierten (rot) sinc-Funktion
