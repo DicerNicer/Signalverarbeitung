@@ -122,46 +122,46 @@ x(t0 − t) ... Zeitinversion
 
 #### zeitliche Skalierung
 
-$
+$$
 x(a · t)
-$
+$$
 
 ### Komplexe Signale
 
 #### kartesischer Darstellung
 
-$
+$$
 x(t) = Re{x(t)} + Im{x(t)}
-$
+$$
 
 #### polarische Darstellung
 
-$
+$$
 x(t) = |x(t)| · ej∠(x(t))
-$
+$$
 
 ### Eigenschaften von Signalen
 
 #### gerade
 
-$
+$$
 x(t) = x(−t)
-$
+$$
 
 #### ungerade
 
-$
+$$
 x(t) = −x(−t)
-$
+$$
 
 #### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen!
 
-$
+$$
 x(t) = xg(t) + xu(t)
-$
-$
+$$
+$$
 x_g(t) = \frac{1}{2}(x(t) + x(−t)) 
-$
-$
+$$
+$$
 x_u(t) = \frac{1}{2}(x(t) − x(−t))
-$
+$$
