@@ -1,4 +1,3 @@
-<p style="text-align:center">
 
 # Zusammenfassung
 
@@ -104,74 +103,51 @@ Zuerst wird ein Stück mit der Länge 500*1000 herausgeslicet und dann in ein 2D
 
 #### Zeitkontinuierlich
 
-$$
-x(t)
-$$
+$x(t)$
 
 #### Zeitdiskret
 
-$$
-x(k*Ts) = x[k]  Ts ... Samplingperiode
-$$
+$x(k*Ts) = x[k]  Ts ... Samplingperiode$
 
 ### Elementare Operationen
 
 #### zeitliche Verschiebung
 
-$$
-x(t − t0) ... Verzögerung um t0
-$$
+$x(t − t0) ... Verzögerung um t0$
 
 #### Spiegelung
 
-$$
-x(t0 − t) ... Zeitinversion
-$$
+$x(t0 − t) ... Zeitinversion$
 
 #### zeitliche Skalierung
 
-$$
-x(a · t)
-$$
+$x(a · t)$
 
 ### Komplexe Signale
 
 #### kartesischer Darstellung
 
-$$
-x(t) = Re{x(t)} + Im{x(t)}
-$$
+$x(t) = Re{x(t)} + Im{x(t)}$
 
 #### polarische Darstellung
 
-$$
-x(t) = |x(t)| · ej∠(x(t))
-$$
+$x(t) = |x(t)| · ej∠(x(t))$
 
 ### Eigenschaften von Signalen
 
 #### gerade
 
-$$
-x(t) = x(−t)
-$$
+$x(t) = x(−t)$
 
 #### ungerade
 
-$$
-x(t) = −x(−t)
-$$
+$x(t) = −x(−t)$
 
 #### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen!
 
-
 $x(t) = xg(t) + xu(t)$
 
-$$
-x_g(t) = \frac{1}{2}(x(t) + x(−t)) 
-$$
-$$
-x_u(t) = \frac{1}{2}(x(t) − x(−t))
-$$
+$x_g(t) = \frac{1}{2}(x(t) + x(−t))$ 
 
-</p>
+$x_u(t) = \frac{1}{2}(x(t) − x(−t))$
+
