@@ -1,4 +1,4 @@
-
+<centered>
 
 # Zusammenfassung
 
@@ -104,21 +104,29 @@ Zuerst wird ein Stück mit der Länge 500*1000 herausgeslicet und dann in ein 2D
 
 #### Zeitkontinuierlich
 
+§§
 x(t)
+§§
 
 #### Zeitdiskret
 
+$$
 x(k*Ts) = x[k]  Ts ... Samplingperiode
+$$
 
 ### Elementare Operationen
 
 #### zeitliche Verschiebung
 
+$$
 x(t − t0) ... Verzögerung um t0
+$$
 
 #### Spiegelung
 
+$$
 x(t0 − t) ... Zeitinversion
+$$
 
 #### zeitliche Skalierung
 
@@ -165,3 +173,5 @@ $$
 $$
 x_u(t) = \frac{1}{2}(x(t) − x(−t))
 $$
+
+</centered>
