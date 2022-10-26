@@ -164,9 +164,9 @@ $$
 
 #### Jedes Signal lässt sich in einen geraden und ungeraden Anteil zerlegen!
 
-$$
-x(t) = xg(t) + xu(t)
-$$
+
+$x(t) = xg(t) + xu(t)$
+
 $$
 x_g(t) = \frac{1}{2}(x(t) + x(−t)) 
 $$
