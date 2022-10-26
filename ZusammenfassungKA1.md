@@ -97,6 +97,8 @@ plt.show()
 
 Zuerst wird ein Stück mit der Länge 500*1000 herausgeslicet und dann in ein 2D Array mit der größe [500,1000] gespeichert dieses kann dann mit plt.imshow() als Bild angezeigt werden
 
+---
+
 ## Signale und ihre Eigenschaften
 
 ### Signale
@@ -164,6 +166,8 @@ Mit der Periodendauer Tp und ganzzahligem Vielfachem n
   <img src="Bilder/periode.png" />
 </p>
 
+---
+
 ### Ausgewählte Signale
 
 #### zeitdiskreter Dirac-Impuls
@@ -215,6 +219,9 @@ $$x[k] = \sum_{k_0=-\infty}^{\infty} x[k_0] \cdot \delta [k-k_0] $$
   <img src="Bilder/si.png" />
 </p>
 Darstellung der normierten (blau) und nicht normierten (rot) sinc-Funktion
+
+---
+
 
 ### Faltung von zwei Rechteckfunktionen
 
