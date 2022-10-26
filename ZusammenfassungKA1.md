@@ -150,3 +150,7 @@ $x(t) = −x(−t)$
 $x(t) = xg(t) + xu(t)$
 $x_g(t) = \frac{1}{2}(x(t) + x(−t))$
 $x_u(t) = \frac{1}{2}(x(t) − x(−t))$
+<p align="center">
+  <img src="Bilder/gerade.png" />
+  <img src="Bilder/ungerade.png" />
+</p>
