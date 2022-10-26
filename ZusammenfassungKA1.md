@@ -138,7 +138,7 @@ $x(t) = |x(t)| · ej∠(x(t))$
 #### gerade
 
 $x(t) = x(−t)$
-![Hier sollte ein Bild sein](https://github.com/DicerNicer/Signalverarbeitung/blob/main/Bilder/gerade.png)
+![Hier sollte ein Bild sein](/Bilder/gerade.png)
 
 #### ungerade
 
