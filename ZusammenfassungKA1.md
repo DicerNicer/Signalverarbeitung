@@ -13,7 +13,7 @@ Bsp.
 
 ```python
 arr = np.array([1, 2, 3, 4])
-print('2nd element: ',arr[0])
+print('2nd element: ',arr[1])
 
 =>2nd element: 2
 ```
