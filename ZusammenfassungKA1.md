@@ -6,7 +6,7 @@
 ### Bsp. Array Indizierung
 
 1D
-Von 0 Aufwährts
+Von 0 Aufwärts
 array[element]
 
 Bsp.
