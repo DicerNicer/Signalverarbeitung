@@ -41,7 +41,9 @@ array[startpunkt:endpunkt]        Array von Startpunkt bis Endpunkt
 array[:endpunkt]                  Array von Anfang bis Endpunkt
 array[startpunkt:]                Array von Startpunkt bis Ende
 array[:]                          ganzes Array
+
 **Wichtig**
+
 Das Ergebnis beinhaltet den Startindex, schließt aber den Endindex aus.
 Minus-Operator wird genutzt um auf einen Index vom Ende her zu verweisen
 
