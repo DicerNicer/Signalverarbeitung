@@ -130,17 +130,19 @@ $x(t)$
 
 #### Zeitdiskret
 
-$x(k*Ts) = x[k]  Ts ... Samplingperiode$
+$x(k*Ts) = x[k]\ \ \text{ Ts ... Samplingperiode}$
 
 ### Elementare Operationen
 
 #### zeitliche Verschiebung
 
-$x(t − t0) ... Verzögerung um t0$
+$x(t − t_0) \ ... \text{ Verzögerung um }t_0$
 
 #### Spiegelung
 
-$x(t0 − t) ... Zeitinversion$
+$x(t_0 − t) \ ... \ \text{Zeitinversion um } t_0(t_0=0=\text{invervsion},\ t_0\neq0 =\text{inversion+verschiebung})$
+
+![](Bilder/inversion.png)
 
 #### zeitliche Skalierung
 
@@ -178,7 +180,7 @@ $x(t) = −x(−t)$
 $x(t) = xg(t) + xu(t)$ <br>
 $x_g(t) = \frac{1}{2}(x(t) + x(−t))$ <br>
 $x_u(t) = \frac{1}{2}(x(t) − x(−t))$
-
+![](Bilder/besin.png)
 #### periodische Signale
 
 $x(t) = x(t + nT_p)$
