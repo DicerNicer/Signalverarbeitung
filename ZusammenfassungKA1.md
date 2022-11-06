@@ -180,7 +180,9 @@ $x(t) = −x(−t)$
 $x(t) = xg(t) + xu(t)$ <br>
 $x_g(t) = \frac{1}{2}(x(t) + x(−t))$ <br>
 $x_u(t) = \frac{1}{2}(x(t) − x(−t))$
+
 ![](Bilder/besin.png)
+
 #### periodische Signale
 
 $x(t) = x(t + nT_p)$
