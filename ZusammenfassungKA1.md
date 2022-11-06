@@ -86,6 +86,25 @@ print(arr[1:5:2])
 
 ## Neuordnen von Matritzen mit "reshape"
 
+'''python
+array = np.array([0,1,2,3,4,5,6,7,8,9])
+ergebnis_array=array.reshape(2,5)
+print(ergebnis_array)
+
+=>  [[0 1 2 3 4]
+    [5 6 7 8 9]]
+    
+array = np.array([0,1,2,3,4,5,6,7,8,9])
+ergebnis_array=array.reshape(5,2)
+print(ergebnis_array)
+
+=>  [[0 1]
+    [2 3]
+    [4 5]
+    [6 7]
+    [8 9]]
+'''
+
 ### Bsp. Voyager erste Bilder
 
 ```python
